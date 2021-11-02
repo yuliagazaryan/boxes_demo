@@ -1,5 +1,6 @@
 import Boxes from "./Boxes";
 import { Switch, Route } from "react-router-dom";
+import Form from "./Form";
 
 const Home = () => {
   return (
@@ -23,6 +24,8 @@ const Contacts = () => {
     </div>
   );
 };
+
+  
 const Main = () => {
   return (
     <main>
@@ -31,6 +34,8 @@ const Main = () => {
         <Route path="/about" component={About} />
         <Route path="/contacts" component={Contacts} />
         <Route path="/boxes" component={Boxes} />
+        <Route path="/form" component={Form} />
+
       </Switch>
     </main>
   );

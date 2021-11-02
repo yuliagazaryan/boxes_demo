@@ -38,3 +38,12 @@ button {
   box-shadow: 0 0 5px #333;
   padding: 1rem;
 }
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+nav ul li {
+  display: inline-block;
+  margin: 1rem;
+}

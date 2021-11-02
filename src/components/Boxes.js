@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Box from "./Box";
 
-class MainC extends Component {
+class Boxes extends Component {
   state = {
     persons: [
       { id: 1, name: "Margit", age: 25, title: "CEO" },
@@ -18,19 +18,17 @@ class MainC extends Component {
   render() {
     return (
       <>
-        <main>
-          {this.state.persons.map((item) => (
-            <Box
-              key={item.id}
-              name={item.name}
-              age={item.age}
-              title={item.title}
-            />
-          ))}
-        </main>
+        {this.state.persons.map((item) => (
+          <Box
+            key={item.id}
+            name={item.name}
+            age={item.age}
+            title={item.title}
+          />
+        ))}
       </>
     );
   }
 }
 
-export default MainC;
+export default Boxes;
